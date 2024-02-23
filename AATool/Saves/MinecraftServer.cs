@@ -48,8 +48,8 @@ namespace AATool.Saves
             ? LastWorldSave.Add(TimeSpan.FromSeconds(SaveInterval))
             : default;
 
-        public static string HostAwarePath(params string[] paths) =>
-            LinuxMode ? Path.Combine(paths).Replace("\\", "/") : Path.Combine(paths);
+//        public static string HostAwarePath(params string[] paths) =>
+//            LinuxMode ? Path.Combine(paths).Replace("\\", "/") : Path.Combine(paths);
 
         public static void Update(Time time)
         {
