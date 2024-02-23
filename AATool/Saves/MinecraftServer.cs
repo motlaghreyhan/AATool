@@ -49,8 +49,8 @@ namespace AATool.Saves
             : default;
 
         public static string HostAwarePath(params string[] paths) =>
-//            LinuxMode ? Path.Combine(paths).Replace("\\", "/") : Path.Combine(paths);
-
+            //LinuxMode ? Path.Combine(paths).Replace("\\", "/") : Path.Combine(paths);
+            Path.Combine(paths).Replace(@"\", "/");
         public static void Update(Time time)
         {
             if (LastError is ArgumentException)
